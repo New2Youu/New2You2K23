@@ -1,0 +1,83 @@
+.cardsPessoas {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cardsPessoas .cardpessoa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.cardsPessoas .cardpessoa h1 {
+    font-size: 28px;
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+.cardsPessoas .contCard {
+    width: 260px;
+    height: 280px;
+
+    background-color: var(--cor-secundaria);
+
+    padding: 10px;
+
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+.cardAtrasQS {
+    width: 260px;
+    height: 280px;
+
+    position: relative;
+    left: 20px;
+    bottom: 248px;
+
+    padding: 5px;
+
+    border-radius: 20px;
+    border: 3px solid black;
+
+    z-index: -1;
+}
+
+#atrasCard1 {
+    background-color: #04D9D9;
+}
+
+#atrasCard2 {
+    background-color: var(--cor-principal);
+}
+
+
+#atrasCard3 {
+    background-color: #1CBC7C;
+}
+
+
+#atrasCard4 {
+    background-color: #00BFC3;
+}
+
+.imgCardQS {
+    background-color: #b4b4b4;
+
+    width: 100%;
+    height: 80%;
+
+    border-radius: 10px;
+
+    margin-bottom: 16px;
+}
+
+@media (max-width: 600px) {
+    .cardsPessoas {
+        gap: 40px;
+    }
+}

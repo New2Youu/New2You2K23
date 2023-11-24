@@ -1,0 +1,61 @@
+.mainQuemSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 84px;
+}
+
+.mainQuemSomos .final {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: 82px;
+    margin-top: 112px;
+}
+
+.mainQuemSomos .final p {
+    font-size: 28px;
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+.mainQuemSomos .final img{
+    position: relative;
+    left: 100px;
+
+    z-index: -2;
+}
+
+#footerQS {
+    position: absolute;
+    top: 1550px;
+}
+
+@media (max-width: 600px) {
+
+    .mainQuemSomos .imgQuemSomos{
+        width: 300px;
+        margin-left: 10px;
+    }
+
+    #footerQS {
+        position: absolute;
+        top: 2480px;
+    }
+
+    .mainQuemSomos .final {
+        margin-top: 20px;
+    }
+
+    .mainQuemSomos .final p {
+        width: 80%;
+        font-size: 22px;
+    }
+
+    .mainQuemSomos .final img {
+        display: none;
+    }
+}

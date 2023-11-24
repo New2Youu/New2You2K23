@@ -1,0 +1,58 @@
+body {
+    background-color: var(--cor-fundo);
+    overflow-x: hidden;
+}
+
+.sectionTelaPrincipal {
+    height: 100vh;
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgPrincipal {
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media (max-width: 600px){
+    .sectionTelaPrincipal .imgPrincipal {
+        margin-top: 280px;
+
+        width: 300px;
+        height: auto;
+    }
+
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .mobile .btnInicioOculto{
+        width: 200px;
+        height: 50px;
+        color: var(--cor-secundaria);
+        background-color: var(--cor-principal);
+
+        font-size: 16px;
+        font-family: var(--font-principal);
+        font-weight: 700;
+
+        border: 2px solid var(--cor-secundaria);
+        border-radius: 10px;
+
+    }
+
+    #footerPrincipal {
+        margin-top: 200px;
+    }
+}
+

@@ -1,0 +1,163 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 90%;
+    height: 80%;
+    background-color: var(--cor-fundo-cards);
+    padding: 20px;
+    border-radius: 36px;
+
+    border: 8px solid var(--cor-principal);
+
+    display: flex;
+    justify-content: center;
+
+    z-index: 1;
+}
+
+.modal .estilizationModal {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.modal .estilizationModal .txtRoupa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal .estilizationModal .txtRoupa img {
+    margin-top: 32px;
+    margin-left: 32px;
+    border: 24px solid var(--cor-secundaria);
+    box-shadow: 10px 10px #3B4F8F;
+}
+
+.modal .estilizationModal .txtRoupa .descItem{
+    height: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    padding-left: 56px;
+}
+
+.modal .estilizationModal .txtRoupa .descItem h1{
+    color: #3B4F8F;
+    
+    font-family: var(--font-principal);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.modal .estilizationModal .txtRoupa .descItem h2 {
+    color: var(--cor-secundaria);
+    
+    font-family: var(--font-principal);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.modal .estilizationModal .txtRoupa .descItem p {
+    color: var(--cor-principal);
+    
+    font-family: var(--font-principal);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.medidas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.btnFecharModal {
+    width: 160px;
+    height: 50px;
+
+    position: relative;
+    top: 40px;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+
+    font-family: var(--font-principal);
+    font-size: 18px;
+    font-weight: 700;
+
+    border: none;
+    border-radius: 14px 14px 36px 14px;
+
+    cursor: pointer;
+}
+
+.btnFecharModal:hover {
+    color: #3B4F8F;
+    background-color: var(--cor-secundaria);
+    border: 4px solid #3B4F8F;
+}
+
+@media(max-width:600px) {
+    .modal{
+        padding: 2px;
+        height: 90%;
+    }
+
+    .modal .estilizationModal {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .modal .estilizationModal .txtRoupa img {
+        width: 160px;
+        height: auto;
+    }
+
+    .modal .estilizationModal .txtRoupa .descItem h1 {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+    .modal .estilizationModal .txtRoupa .descItem h2 {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .modal .estilizationModal .txtRoupa .descItem p {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .modal .estilizationModal .txtRoupa .descItem {
+        height: 160px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .btnFecharModal {
+        width: 100px;
+        height: 40px;
+        position: absolute;
+
+        border-radius: 10px;
+
+        top: 500px;
+    }
+}

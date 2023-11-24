@@ -1,0 +1,47 @@
+body {
+    background-color: var(--cor-fundo);
+    overflow-x: hidden;
+}
+
+.divPhanton {
+    width: 100%;
+    height: 16vh;
+}
+
+.sectionScreenAutorizados {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 76px;
+}
+
+.txtAutorizados {
+    font-size: 32px;
+    font-family: var(--font-principal);
+    font-weight: 700;
+}
+
+#formaAutorizados {
+    position: absolute;
+    left: 82vw;
+    top: 58vh;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .sectionScreenAutorizados .imgAutorizados {
+        margin-left: 20px;
+        width: 300px;
+        height: auto;
+    }
+
+    .sectionScreenAutorizados #formaAutorizados {
+        display: none;
+    }
+
+    .sectionScreenAutorizados .txtAutorizados {
+        font-size: 22px;
+        text-align: center;
+    }
+}

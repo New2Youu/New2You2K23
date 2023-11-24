@@ -1,0 +1,116 @@
+#bdPortfolio {
+    background-color: var(--cor-principal);
+}
+
+.sectionTitlePortfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 62px;
+}
+
+.imgPrincipalPort {
+    position: absolute;
+}
+
+.sectionTitlePortfolio p {
+    font-family: var(--font-principal);
+    color: var(--cor-secundaria);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    position: absolute;
+    bottom: 126px;
+
+    z-index: 1;
+}
+
+.sectionTitlePortfolio h1 {
+    font-family: var(--font-principal);
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+
+    position: relative;
+    bottom: 76px;
+    left: 286px;
+
+    z-index: 1;
+}
+
+.sectionTitlePortfolio img {
+    width: 700px;
+
+    z-index: -1;
+}
+
+.sectionPortfolio img {
+    width: 400px;
+    height: auto;
+}
+
+.sectionPortfolio .backgroundForms {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+    gap: 100px;
+}
+
+.sectionPortfolio .backgroundForms .twoForms {
+    display: flex;
+    gap: 600px;
+}
+
+.sectionPortfolio .backgroundForms .twoForms #img1, #img3 {
+    position: relative;
+    right: 80px;
+    z-index: -1;
+}
+
+.cardsMain {
+    position: absolute;
+    top: 680px;
+    left: 44px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 42px;
+
+
+    z-index: 1;
+}
+
+#footerPortfolio {
+    margin-top: 140px;
+}
+
+@media(max-width: 600px) {
+    .sectionTitlePortfolio img {
+        width: 300px;
+    }
+
+    .sectionTitlePortfolio p {
+        font-size: 22px;
+        position: absolute;
+        bottom: 260px;
+        left: 20px;
+    }
+
+    .sectionTitlePortfolio h1 {
+        font-size: 16px;
+        position: absolute;
+        top: 120px;
+        left: 252px;
+    }
+
+    .sectionPortfolio .backgroundForms {
+        display: none;
+    }
+
+    #footerPortfolio {
+        position: relative;
+        top: 3460px;
+    }
+}

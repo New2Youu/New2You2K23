@@ -1,0 +1,48 @@
+
+
+.card {
+    background-color: var(--cor-secundaria);
+    width: 275px;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    z-index: -2;
+
+    box-shadow: 10px 10px #3B4F8F;
+}
+
+.card .imgCard {
+    background-color: var(--cor-principal);
+    width: 90%;
+    height: 70%;
+}
+
+.card .titleCard {
+    font-family: var(--font-principal);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.card .btnCard {
+    width: 50%;
+    height: 30px;
+
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: none;
+
+    font-family: var(--font-principal);
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.card .btnCard:hover {
+    color: var(--cor-principal);
+    border: 2px solid var(--cor-principal);
+    background-color: var(--cor-secundaria);
+}

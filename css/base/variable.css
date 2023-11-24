@@ -1,0 +1,12 @@
+@import url('https://db.onlinewebfonts.com/c/0f9c349da923afea31fae4db7b8094f0?family=Gotham+Black');
+
+:root {
+    --cor-principal: #F2055C;
+    --cor-secundaria: #fff;
+    --cor-fundo: #eee;
+    --cor-fundo-cards: #A5F26D;
+    --cor-fonts: #000;
+    --cor-button: #00bfc3;
+
+    --font-principal: 'Gotham Black', sans-serif;
+}

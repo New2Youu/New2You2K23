@@ -1,0 +1,51 @@
+.navbar {
+    width: 100%;
+    height: 16vh;
+
+    background-color: var(--cor-secundaria);
+
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 16rem;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 4vw;
+}
+
+.navbar ul a {
+    color: var(--cor-fonts);
+    font-family: var(--font-principal);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.navbar ul a:hover {
+    text-decoration: none;
+}
+
+.navbar #hamburger, #exHamburger{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .navbar ul {
+        display: none;
+    }
+}
+
+/*    <nav class="navbar">
+            <a href=""><img src="img/LOGO N2Y.png" alt="LOGO" width="115px" height="65px"></a>        <ul>
+            <li><a href="">#AUTORIZADOS</a></li>
+            <li><a href="">TROCA TREND</a></li>
+            <li><a href="">PORTFÓLIO</a></li>
+            <li><a href="">SOBRE NÓS</a></li>
+            <li><a href="">POSTAR ROUPA</a></li>
+        </ul>
+    </nav>
+*/

@@ -1,0 +1,14 @@
+@import "base/reset.css";
+@import "base/variable.css";
+@import "elements.css/body.css";
+@import "elements.css/nav.css";
+@import "pages/section_screen_principal.css";
+@import "elements.css/button.css";
+@import "elements.css/footer.css";
+@import "pages/section_screen_autorizados.css";
+@import "pages/section_screen_trocaTrend.css";
+@import "pages/section_screen_portfolio.css";
+@import "elements.css/cards.css";
+@import "elements.css/modal.css";
+@import "pages/section_screen_quemSomos.css";
+@import "elements.css/cardQuemSomos.css";
